@@ -6,8 +6,39 @@ header .header_menu{
 header .header_menu .header_item_center{
     margin-left:32px;
     margin-right:32px;
-    min-height:84px;
+    height:84px;
 }
-.item_left{
- padding:12px;
+.item_left {
+    height: 22px;
+
+    width: 18px;
+    padding: 12px;
+    floating: left;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .item_right {
+        height: 22px;
+        width: 18px;
+        padding: 12px;
+        floating: right;
+        justify-content: space-between;
+        flex-direction: column;
+
+
+    }
+
+    .image_icon_1 {
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        border-radius: 1px;
+    }
+
+    .image_icon_2 {
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        border-radius: 1px;
+    }
 }
