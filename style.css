@@ -1,3 +1,45 @@
 main{
     background-color: white;
 }
+a{
+
+}
+p{
+
+}
+body{
+
+}
+.footer{
+    display: block;
+    box-sizing: border-box;
+    unicode-bidi: isolate;  //giúp đoạn đó không bị ảnh hưởng bởi hướng của nội dung xung quanh.
+}
+.mid-footer{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background: blue;
+    font-size: 14px;
+    padding-top: 50px;
+    font-size: 14px;
+}
+.container{
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.col-xs-12{
+    position:relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+;
+}
