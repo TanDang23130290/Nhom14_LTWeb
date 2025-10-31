@@ -1,13 +1,7 @@
-main{
+.main {
     background-color: white;
 }
-a{
-
-}
-p{
-
-}
-body{
+.body {
 
 }
 .footer{
@@ -21,7 +15,7 @@ body{
     background: blue;
     font-size: 14px;
     padding-top: 50px;
-    font-size: 14px;
+
 }
 .container{
     width: 100%;
