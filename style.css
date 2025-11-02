@@ -1,12 +1,19 @@
 .main {
     background-color: white;
 }
-.body {
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+body {
+    background: #fff;
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: 'Inter', sans-serif;
 
 }
 .footer{
     display: block;
-    box-sizing: border-box;
     unicode-bidi: isolate;  //giúp đoạn đó không bị ảnh hưởng bởi hướng của nội dung xung quanh.
 }
 .mid-footer{
@@ -24,16 +31,80 @@
     margin-left: auto;
     margin-right: auto;
 }
+*{
+    box-sizing: border-box;
+}
 .row{
     display: flex;
     flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
 }
-.col-xs-12{
+.auto{
     position:relative;
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
-;
 }
+.mt-4{
+    margin-top: 1.5rem !important;
+}
+.about-company{
+    line-height: 24px;
+    margin-top: 18px;
+    font-size: 16px;
+}
+.mid-footer .line_patker{
+    margin-top: 1rem;
+}
+.mid-footer p{
+    margin-bottom: 5px;
+    color: #f8f9fa;
+}
+.mid-footer .line_patker img{
+    width: 150px;
+}
+.mid-footer .title-menu{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    display: flex;
+    color: #f5dd64;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.mid-footer p b{
+    color: #fbe263fa;
+}
+.mid-footer .f-block.f-support > p{
+    color: #fbe263;
+    line-height: 1;
+    font-size: 16px;
+    font-family: 'brandon', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.mid-footer .list-menu{
+    list-style: none;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+}
+.mid-footer .list-menu .link{
+    font-size: 14px;
+    color: #eaeef4;
+}
+.mid-footer .li_menu{
+    list-style: "-";
+    padding-bottom: 6px;
+    list-style-position: inside;
+    color: #eaeef4;
+}
+
