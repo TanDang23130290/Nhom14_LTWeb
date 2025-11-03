@@ -99,7 +99,7 @@ header .header_menu{
         margin-left:-1px;
     }
 .menu_item{
-    height:47px;
+    height:100px;
     position:relative;
     background-color:#e6eeff;
     font-size:25px;
@@ -111,7 +111,8 @@ header .header_menu{
     float:left;
     padding:20px;
     cursor:pointer;
-
+    border:#e5eeff solid ;
+    text-align: center;
 }
 .item-icon{
     font-size:16px;
@@ -121,3 +122,31 @@ header .header_menu{
     transition:2ms ;
     color:#007bff;
 }
+
+.subitem_menu{
+    display: none;
+    position:relative;
+    bottom: 30px;
+    margin-left: -30px;
+    border: 1px solid hsl(0, 0%, 87%);
+    width: 230px;
+    background-color: white;
+    list-style:none;
+
+
+
+}
+.item:hover .subitem_menu{
+    display: block;
+}
+.subitem{
+    padding: 15px 30px;
+    display: block;
+    color: black;
+    cursor:pointer;
+}
+.subitem:hover{
+    transition:2ms ;
+    color:#007bff;
+}
+
