@@ -1,0 +1,334 @@
+<!-- 
+    WEBSITE BÁN VĂN PHÒNG PHẨM - TRANG CHỦ
+    Đây là file HTML chứa cấu trúc toàn bộ website
+    File này import CSS từ file style.css
+-->
+
+<!DOCTYPE html>
+<!-- DOCTYPE khai báo rằng đây là tài liệu HTML5 -->
+<html lang="vi">
+<!-- html lang="vi" : Khai báo trang web là tiếng Việt -->
+<head>
+    <!-- head: Chứa các thông tin meta và liên kết đến CSS -->
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport: Thiết lập responsive - trang web sẽ tự điều chỉnh kích thước theo thiết bị -->
+    
+    <title>Thiên Lý - Cung cấp văn phòng phẩm chất lượng cao</title>
+    <!-- title: Tên trang web hiển thị trên tab trình duyệt -->
+    
+    <meta name="description" content="Cửa hàng bán văn phòng phẩm online - cung cấp bút, giấy, tập, dụng cụ văn phòng chất lượng với giá tốt">
+    <!-- description: Mô tả ngắn về trang web để Google hiển thị trên kết quả tìm kiếm -->
+    
+    <!-- Import Bootstrap 5 từ CDN (Content Delivery Network) -->
+    <!-- Bootstrap là framework CSS giúp thiết kế web nhanh và dễ hơn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Import Font Awesome để sử dụng icons (biểu tượng) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Import file CSS tùy chỉnh của website -->
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+    <!-- ==================== PHẦN DANH MỤC SẢN PHẨM ==================== -->
+    <section class="categories-section py-5">
+        <!-- categories-section: Phần danh mục sản phẩm -->
+        <!-- py-5: Padding-top và padding-bottom = 5 unit (48px) -->
+        
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <!-- mb-5: Margin-bottom 5 unit -->
+                <i class="fas fa-th"></i> Danh mục sản phẩm
+            </h2>
+            
+            <!-- Grid danh mục (4 cột trên màn hình lớn) -->
+            <div class="row">
+                <!-- row: Hàng lưới -->
+                
+                <!-- Danh mục 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="" class="category-card">
+                    <!-- col-lg-3: Chiếm 3/12 (25%) trên màn hình lớn -->
+                    <!-- col-md-6: Chiếm 6/12 (50%) trên màn hình trung bình -->
+                    <!-- mb-4: Margin-bottom 4 unit (24px) -->
+                        <!-- category-card: Card danh mục (được định dạng trong CSS) -->
+                        <div class="category-icon">
+                            <!-- Icon danh mục -->
+                            <i class="fas fa-pen"></i>
+                        </div>
+                        
+                        <h5>Bút viết</h5>
+                        <!-- h5: Tiêu đề cấp 5 -->
+                        
+                        <p>100+ sản phẩm</p>
+                    </a>
+                </div>
+                
+                <!-- Danh mục 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-file"></i>
+                        </div>
+                        <h5>Giấy in</h5>
+                        <p>80+ sản phẩm</p>
+                    </a>
+                </div>
+                
+                <!-- Danh mục 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h5>Tập ghi chép</h5>
+                        <p>120+ sản phẩm</p>
+                    </a>
+                </div>
+                
+                <!-- Danh mục 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-scissors"></i>
+                        </div>
+                        <h5>Dụng cụ khác</h5>
+                        <p>150+ sản phẩm</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==================== PHẦN FLASH SALE ==================== -->
+    <section class="flash-sale-section py-5">
+        <!-- flash-sale-section: Phần khuyến mại giật gân -->
+        
+        <div class="container">
+            <!-- Tiêu đề Flash Sale -->
+            <div class="text-center mb-5">
+                <h2>
+                    <i class="fas fa-bolt" style="color: #ff9800;"></i>
+                    Flash Sale - Giảm đến 50%
+                </h2>
+                <!-- Biểu tượng sét để chỉ sale nhanh -->
+                
+                <p class="text-muted">Hôm nay: Bắt đầu 00:00 - Kết thúc 23:59</p>
+            </div>
+            
+            <!-- Grid sản phẩm flash sale (4 cột trên màn hình lớn) -->
+            <div class="row">
+                
+                <!-- Sản phẩm 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <!-- product-card: Thẻ sản phẩm (được định dạng trong CSS) -->
+                        
+                        <!-- Badge sale -->
+                        <div class="product-badge">
+                            <!-- product-badge: Nhãn giảm giá -->
+                            -50%
+                        </div>
+                        
+                        <!-- Hình ảnh sản phẩm -->
+                        <div class="product-image">
+                            <!-- product-image: Container chứa ảnh sản phẩm -->
+                            <img src="https://cdn.hstatic.net/products/1000230347/artboard_9_copy_87a8de69186a47b3bb2b65f06c02d7f8.jpg" alt="Bút bi Thiên Long ECO Style TL-063/ECO - Mực Xanh - Chất liệu từ vỏ cám trấu">
+                            <!-- alt: Mô tả ảnh để SEO và accessibility -->
+                        </div>
+                        
+                        <!-- Thông tin sản phẩm -->
+                        <div class="product-info p-3">
+                            <!-- p-3: Padding 3 unit (12px) cho tất cả các cạnh -->
+
+                            <h6>Bút bi Thiên Long ECO Style TL-063/ECO - Mực Xanh - Chất liệu từ vỏ cám trấu</h6>
+                            <!-- h6: Tiêu đề cấp 6 nhỏ nhất -->
+                            
+                            <!-- Sao đánh giá -->
+                            <div class="stars mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <!-- Hiển thị 4.5 sao -->
+                                <span class="text-muted">(250)</span>
+                                <!-- Số lượng bình luận -->
+                            </div>
+                            
+                            <!-- Giá cũ và giá mới -->
+                            <div class="price">
+
+                                <span class="old-price text-decoration-line-through text-muted">12,000đ</span>
+                                <!-- Giá gốc bị gạch ngang -->
+
+                                <span class="new-price text-danger"><strong>10,000đ</strong></span>
+                                <!-- Giá mới màu đỏ -->
+                            </div>
+                            
+                            <!-- Nút mua -->
+                            <a href="productDetail.html" class="btn btn-sm btn-primary w-100 mt-3">
+                                <!-- w-100: Chiều rộng 100% -->
+                                <!-- mt-3: Margin-top 3 unit -->
+                                <i class="fas fa-eye"></i> Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sản phẩm 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-badge">-40%</div>
+                        <div class="product-image">
+                            <img src="https://product.hstatic.net/1000230347/product/artboard_1_copy_4d8a475bb43e44a8a0cc3cf98b6feaf1.jpg" alt="Combo 20 Bút chì gỗ Thiên Long GP-01 - Màu thân ngẫu nhiên">
+                        </div>
+                        <div class="product-info p-3">
+                            <h6>Combo 20 Bút chì gỗ Thiên Long GP-01 - Màu thân ngẫu nhiên</h6>
+                            <div class="stars mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="text-muted">(180)</span>
+                            </div>
+                            <div class="price">
+                                <span class="old-price text-decoration-line-through text-muted">90,000đ</span>
+                                <span class="new-price text-danger"><strong>63,000đ</strong></span>
+                            </div>
+                            <a href="" class="btn btn-sm btn-primary w-100 mt-3">
+                                <i class="fas fa-eye"></i> Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sản phẩm 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-badge">-35%</div>
+                        <div class="product-image">
+                            <img src="https://cdn.hstatic.net/products/1000230347/artboard_11_copy_2_e2099ccf024d4fa4bbde7f5616d2eb7d.jpg" alt="Máy tính khoa học Thiên Long Flexio Fx799VN, 4 màu pastel mới, bảo hành 7 năm, 1 đổi 1 trong 1 năm đầu">
+                        </div>
+                        <div class="product-info p-3">
+                            <h6>Máy tính khoa học Thiên Long Flexio Fx799VN, 4 màu pastel mới, bảo hành 7 năm, 1 đổi 1 trong 1 năm đầu</h6>
+                            <div class="stars mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="text-muted">(420)</span>
+                            </div>
+                            <div class="price">
+                                <span class="old-price text-decoration-line-through text-muted">856,000đ</span>
+                                <span class="new-price text-danger"><strong>570,250đ</strong></span>
+                            </div>
+                            <a href="" class="btn btn-sm btn-primary w-100 mt-3">
+                                <i class="fas fa-eye"></i> Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sản phẩm 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-badge">-45%</div>
+                        <!-- Hình ảnh sản phẩm -->
+                        <div class="product-image">
+                            <img src="https://product.hstatic.net/1000230347/product/artboard_1_copy_b51030e930dc4aed94bcfb43ed9c0427.jpg" alt="Sổ lò xo đường kẻ ngang 7mm A5 Thiên Long MB-025">
+                        </div>
+                        <!-- Thông tin sản phẩm -->
+                        <div class="product-info p-3">
+                            <h6>Sổ lò xo đường kẻ ngang 7mm A5 Thiên Long MB-025</h6>
+                            <!-- Sao đánh giá -->
+
+                            <div class="stars mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="text-muted">(310)</span>
+                            </div>
+                            <!-- Giá cũ và giá mới -->
+                            <div class="price">
+                                <span class="old-price text-decoration-line-through text-muted">120,000đ</span>
+                                <span class="new-price text-danger"><strong>66,000đ</strong></span>
+                            </div>
+                            <!-- Nút mua -->
+                            <a href="" class="btn btn-sm btn-primary w-100 mt-3">
+                                <i class="fas fa-eye"></i> Xem chi tiết
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nút xem tất cả sale -->
+            <div class="text-center mt-5">
+                <a href="" class="btn btn-outline-primary btn-lg">
+                    Xem tất cả Flash Sale
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==================== PHẦN CÁC LỢI ÍCH ==================== -->
+    <section class="benefits-section py-5 bg-light">
+        <!-- benefits-section: Phần giới thiệu lợi ích -->
+        <!-- bg-light: Nền màu xám nhạt -->
+        
+        <div class="container">
+            <div class="row text-center">
+                
+                <!-- Lợi ích 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card">
+                        <!-- benefit-card: Thẻ lợi ích (được định dạng trong CSS) -->
+                        
+                        <i class="fas fa-truck" style="font-size: 40px; color: #007bff;"></i>
+                        <!-- Icon xe giao hàng -->
+                        
+                        <h5 class="mt-3">Giao hàng nhanh</h5>
+                        <p>Giao hàng toàn quốc trong 2-3 ngày làm việc</p>
+                    </div>
+                </div>
+                
+                <!-- Lợi ích 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card">
+                        <i class="fas fa-shield-alt" style="font-size: 40px; color: #28a745;"></i>
+                        <!-- Icon khiên bảo vệ -->
+                        
+                        <h5 class="mt-3">Hàng chính hãng 100%</h5>
+                        <p>Tất cả sản phẩm đều có xuất xứ rõ ràng, cam kết chất lượng</p>
+                    </div>
+                </div>
+                
+                <!-- Lợi ích 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card">
+                        <i class="fas fa-undo" style="font-size: 40px; color: #ff9800;"></i>
+                        <!-- Icon hoàn trả -->
+                        
+                        <h5 class="mt-3">Hoàn tiền 30 ngày</h5>
+                        <p>Không hài lòng? Hoàn tiền đầy đủ trong 30 ngày</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SCRIPT ==================== -->
+    <!-- Script Bootstrap (cần thiết để các component như Carousel, Dropdown, Collapse hoạt động) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bundle.min.js: Phiên bản đã gộp tất cả JS Bootstrap vào -->
+    
+</body>
+</html>
