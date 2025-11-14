@@ -1,0 +1,53 @@
+body{
+    background:cyan;
+}
+.container{
+    background-color:#18479e;
+    height:484px;
+    width:430px;
+    margin-top:300px;
+    margin-bottom:140px;
+    border-radius: 15px;
+}
+.row-1{
+    width:100%;
+    height:50px;
+    position:relative;
+     top:45px;
+    text-align:center;
+    font-size:30px;
+    color:white;
+}
+.row-2{
+    width:100%;
+    height:50px;
+    position:relative;
+    top:65px;
+    color:white;
+}
+.row-3{
+    width:100%;
+    height:50px;
+    position:relative;
+    top:145px;
+}
+.row-4{
+    width:100%;
+    height:50px;
+    position:relative;
+    top:165px;
+    text-align: center;
+}
+.Login_button{
+    background-color:#f5df4d;
+    border-radius:15px;
+    width:80%;
+}
+.row-5 {
+    width:100%;
+    height:50px;
+    position:relative;
+    top:185px;
+    text-align:center;
+}
+
