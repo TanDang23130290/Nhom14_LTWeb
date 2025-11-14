@@ -14,7 +14,8 @@ body {
 }
 .footer{
     display: block;
-    unicode-bidi: isolate;  //giúp đoạn đó không bị ảnh hưởng bởi hướng của nội dung xung quanh.
+    unicode-bidi: isolate;  // giúp đoạn đó không bị ảnh hưởng bởi hướng của nội dung xung quanh.
+
 }
 .mid-footer{
     border-top-left-radius: 24px;
@@ -37,8 +38,9 @@ body {
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+    padding-top: 10px;
+    justify-content: space-between;
+    gap:20px;
 }
 .auto{
     position:relative;
@@ -47,7 +49,11 @@ body {
     padding-left: 10px;
 }
 .mt-4{
+
     margin-top: 1.5rem !important;
+     width: 280px;
+    position: relative;
+
 }
 .about-company{
     line-height: 24px;
@@ -57,14 +63,11 @@ body {
 .mid-footer .line_patker{
     margin-top: 1rem;
 }
-.mid-footer p{
-    margin-bottom: 5px;
-    color: #f8f9fa;
-}
+
 .mid-footer .line_patker img{
     width: 150px;
 }
-.mid-footer .title-menu{
+.mid-footer .title-menu {
     margin-top: 0px;
     margin-bottom: 10px;
     margin-left: 0px;
@@ -73,10 +76,20 @@ body {
     font-weight: bold;
     font-stretch: normal;
     display: flex;
-    color: #f5dd64;
+   color: #fbe263;
     justify-content: space-between;
     align-items: center;
 
+}
+.mid-footer .footer-click:nth-child(2) .title {
+    color: #fbe263;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+}
+.mid-footer p {
+    margin-bottom: 5px;
+    color: #f8f9fa;
 }
 .mid-footer p b{
     color: #fbe263fa;
