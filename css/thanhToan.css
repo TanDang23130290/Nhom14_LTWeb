@@ -1,0 +1,223 @@
+
+/* ===== CARD ===== */
+.card {
+  /* card: Bootstrap component cho thẻ */
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  /* card-header: Phần đầu của thẻ */
+  background-color: #003da5;
+  color: white;
+  border-bottom: 1px solid #dee2e6;
+  padding: 15px;
+}
+
+
+.card-body {
+  /* card-body: Phần nội dung của thẻ */
+  padding: 20px;
+}
+
+/* ===== FORM ===== */
+form {
+  /* form: Biểu mẫu */
+  display: block;
+}
+
+.form-label {
+  /* form-label: Nhãn trong form */
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+  /* form-control, form-select: Input và select */
+  border-color: #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  /* Khi focus vào input/select */
+  border-color: #003da5;
+  box-shadow: 0 0 0 0.2rem rgba(0, 61, 165, 0.25);
+}
+
+/* ===== FORM CHECK ===== */
+.form-check {
+  /* form-check: Container cho checkbox/radio */
+  display: flex;
+  align-items: flex-start;
+}
+
+.form-check-input {
+  /* form-check-input: Checkbox/radio */
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.form-check-label {
+  /* form-check-label: Nhãn checkbox/radio */
+  margin-left: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-check-input:checked {
+  /* Checkbox/radio được chọn */
+  background-color: #003da5;
+  border-color: #003da5;
+}
+
+/* ===== ORDER SUMMARY ===== */
+.order-summary {
+  /* order-summary: Phần tóm tắt đơn hàng */
+  background-color: white;
+  border-radius: 8px;
+}
+
+.order-items {
+  /* order-items: Container chứa danh sách sản phẩm */
+  padding: 15px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.order-items .d-flex {
+  /* Căn hai đầu */
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== ALERT ===== */
+.alert {
+  /* alert: Bootstrap component cho alert */
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.alert-info {
+  /* alert-info: Alert màu xanh */
+  background-color: #e7f3ff;
+  border: 1px solid #b3d9ff;
+  color: #004085;
+}
+
+.alert-heading {
+  /* alert-heading: Tiêu đề trong alert */
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* ===== STICKY TOP ===== */
+.sticky-top {
+  /* sticky-top: Dính ở phía trên khi scroll */
+  position: sticky;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  /* btn: Bootstrap component cho button */
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  /* btn-primary: Button màu xanh */
+  background-color: #003da5;
+  border-color: #003da5;
+  color: white;
+}
+
+.btn-primary:hover {
+  /* Khi hover vào button */
+  background-color: #002a7f;
+  border-color: #002a7f;
+}
+
+.btn-danger {
+  /* btn-danger: Button màu đỏ */
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: white;
+}
+
+.btn-danger:hover {
+  /* Khi hover vào button */
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+
+.btn-outline-secondary {
+  /* btn-outline-secondary: Button outline màu xám */
+  color: #666;
+  border-color: #ccc;
+}
+
+.btn-outline-secondary:hover {
+  /* Khi hover vào button */
+  background-color: #f8f9fa;
+  border-color: #666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  /* @media: Media query - Áp dụng style cho màn hình <= 768px */
+
+  .row {
+    /* Hàng nhỏ hơn */
+    flex-direction: column;
+  }
+
+  .col-lg-8,
+  .col-lg-4 {
+    /* Cột chiếm toàn bộ chiều rộng */
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .sticky-top {
+    /* Không dính ở trên di động */
+    position: relative;
+  }
+
+  .form-check {
+    /* Form check nhỏ hơn */
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* @media: Media query - Áp dụng style cho màn hình <= 576px */
+
+  .card-body {
+    /* Padding nhỏ hơn */
+    padding: 12px;
+  }
+
+  .form-label {
+    /* Label nhỏ hơn */
+    font-size: 13px;
+  }
+
+  .btn {
+    /* Button nhỏ hơn */
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .btn-lg {
+    /* Button large nhỏ hơn */
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
