@@ -50,4 +50,10 @@ body{
     top:185px;
     text-align:center;
 }
+.forgot-password{
+    color:gray;
+}
 
+.create_account{
+   color:gray;
+}
