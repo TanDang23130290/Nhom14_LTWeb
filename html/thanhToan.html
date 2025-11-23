@@ -1,0 +1,322 @@
+<!-- 
+    WEBSITE BÁN VĂN PHÒNG PHẨM - TRANG THANH TOÁN
+    Trang này cho phép người dùng nhập thông tin và tiến hành thanh toán
+-->
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán - Thiên Lý</title>
+    
+    <!-- Import Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Import Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Import file CSS -->
+    <link rel="stylesheet" href="../css/thanhToan.css">
+</head>
+
+<body>
+
+    <!-- ==================== PHẦN CHÍNH: THANH TOÁN ==================== -->
+    <main class="py-5">
+        <div class="container">
+            <h1 class="mb-4">
+                <i class="fas fa-credit-card"></i> Thanh toán
+            </h1>
+
+            <div class="row g-4">
+                <!-- Cột 1: Form thông tin -->
+                <div class="col-lg-8">
+                    <!-- ===== THÔNG TIN GIAO HÀNG ===== -->
+                    <div class="card mb-4">
+                        <!-- card: Bootstrap component cho thẻ -->
+                        
+                        <div class="card-header bg-primary text-white">
+                            <!-- card-header: Phần đầu của thẻ -->
+                            <h5 class="mb-0">
+                                <i class="fas fa-map-marker-alt"></i> Thông tin giao hàng
+                            </h5>
+                        </div>
+                        
+                        <div class="card-body">
+                            <!-- card-body: Phần nội dung của thẻ -->
+                            
+                            <form id="shippingForm">
+                                <!-- form: Biểu mẫu -->
+                                
+                                <!-- Hàng 1: Họ tên -->
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="fullName" class="form-label">
+                                            Họ và tên <span class="text-danger">*</span>
+                                            <!-- <span class="text-danger">*</span>: Đánh dấu trường bắt buộc -->
+                                        </label>
+                                        <input type="text" class="form-control" id="fullName" 
+                                               placeholder="Nhập họ và tên" required>
+                                        <!-- required: Trường bắt buộc -->
+                                    </div>
+                                    
+                                    <!-- Số điện thoại -->
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">
+                                            Số điện thoại <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="tel" class="form-control" id="phone" 
+                                               placeholder="Nhập số điện thoại" required>
+                                    </div>
+                                </div>
+
+                                <!-- Hàng 2: Email -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">
+                                        Email <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="email" class="form-control" id="email" 
+                                           placeholder="Nhập email" required>
+                                </div>
+
+                                <!-- Hàng 3: Địa chỉ -->
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">
+                                        Địa chỉ giao hàng <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="address" 
+                                           placeholder="Nhập địa chỉ" required>
+                                </div>
+
+                                <!-- Hàng 4: Tỉnh/Thành phố, Quận/Huyện -->
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="city" class="form-label">
+                                            Tỉnh/Thành phố <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-select" id="city" required>
+                                            <!-- form-select: Bootstrap component cho select -->
+                                            
+                                            <option value="">Chọn tỉnh/thành phố</option>
+                                            <option value="hcm">TP. Hồ Chí Minh</option>
+                                            <option value="hn">Hà Nội</option>
+                                            <option value="dn">Đà Nẵng</option>
+                                            <option value="kt">Kiên Giang</option>
+                                            <option value="other">Khác</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="district" class="form-label">
+                                            Quận/Huyện <span class="text-danger">*</span>
+                                        </label>
+                                        <select class="form-select" id="district" required>
+                                            <option value="">Chọn quận/huyện</option>
+                                            <option value="1">Quận 1</option>
+                                            <option value="2">Quận 2</option>
+                                            <option value="3">Quận 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Ghi chú -->
+                                <div class="mb-3">
+                                    <label for="notes" class="form-label">Ghi chú đơn hàng (tùy chọn)</label>
+                                    <textarea class="form-control" id="notes" rows="3" 
+                                              placeholder="Nhập ghi chú cho người bán..."></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- ===== HÌNH THỨC GIAO HÀNG ===== -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">
+                                <i class="fas fa-truck"></i> Hình thức giao hàng
+                            </h5>
+                        </div>
+                        
+                        <div class="card-body">
+                            <!-- Radio button 1 -->
+                            <div class="form-check mb-3 p-3 border rounded">
+                                <!-- form-check: Bootstrap component cho radio button -->
+                                
+                                <input class="form-check-input" type="radio" name="shippingMethod" 
+                                       id="fast" value="fast" checked>
+                                <!-- checked: Được chọn mặc định -->
+                                
+                                <label class="form-check-label" for="fast">
+                                    <strong>Giao hàng nhanh (2-3 ngày)</strong> - Miễn phí
+                                    <br>
+                                    <small class="text-muted">Phù hợp cho hầu hết đơn hàng</small>
+                                </label>
+                            </div>
+
+                            <!-- Radio button 2 -->
+                            <div class="form-check mb-3 p-3 border rounded">
+                                <input class="form-check-input" type="radio" name="shippingMethod" 
+                                       id="standard" value="standard">
+                                
+                                <label class="form-check-label" for="standard">
+                                    <strong>Giao hàng tiêu chuẩn (5-7 ngày)</strong> - Miễn phí
+                                    <br>
+                                    <small class="text-muted">Giao hàng toàn quốc</small>
+                                </label>
+                            </div>
+
+                            <!-- Radio button 3 -->
+                            <div class="form-check p-3 border rounded">
+                                <input class="form-check-input" type="radio" name="shippingMethod" 
+                                       id="express" value="express">
+                                
+                                <label class="form-check-label" for="express">
+                                    <strong>Giao hàng siêu tốc (Ngày hôm sau)</strong> - 30,000đ
+                                    <br>
+                                    <small class="text-muted">Chỉ áp dụng tại TP. HCM, Hà Nội</small>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== HÌNH THỨC THANH TOÁN ===== -->
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">
+                                <i class="fas fa-wallet"></i> Hình thức thanh toán
+                            </h5>
+                        </div>
+                        
+                        <div class="card-body">
+                            <!-- Radio button 1 -->
+                            <div class="form-check mb-3 p-3 border rounded">
+                                <input class="form-check-input" type="radio" name="paymentMethod" 
+                                       id="cod" value="cod" checked>
+                                
+                                <label class="form-check-label" for="cod">
+                                    <strong>Thanh toán khi nhận hàng (COD)</strong>
+                                    <br>
+                                    <small class="text-muted">An toàn, tiện lợi - Không tính phí</small>
+                                </label>
+                            </div>
+
+                            <!-- Radio button 2 -->
+                            <div class="form-check mb-3 p-3 border rounded">
+                                <input class="form-check-input" type="radio" name="paymentMethod" 
+                                       id="bank" value="bank">
+                                
+                                <label class="form-check-label" for="bank">
+                                    <strong>Chuyển khoản ngân hàng</strong>
+                                    <br>
+                                    <small class="text-muted">Chuyển tiền trước khi giao hàng</small>
+                                </label>
+                            </div>
+
+                            <!-- Radio button 3 -->
+                            <div class="form-check mb-3 p-3 border rounded">
+                                <input class="form-check-input" type="radio" name="paymentMethod" 
+                                       id="wallet" value="wallet">
+                                
+                                <label class="form-check-label" for="wallet">
+                                    <strong>Ví điện tử (Momo, ZaloPay)</strong>
+                                    <br>
+                                    <small class="text-muted">Thanh toán trực tuyến an toàn</small>
+                                </label>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cột 2: Tóm tắt đơn hàng -->
+                <div class="col-lg-4">
+                    <!-- ===== TÓM TẮT ĐƠN HÀNG ===== -->
+                    <div class="order-summary sticky-top" style="top: 20px;">
+                        <!-- sticky-top: Dính ở phía trên khi scroll -->
+                        
+                        <div class="card">
+                            <div class="card-header bg-secondary text-white">
+                                <h5 class="mb-0">
+                                    <i class="fas fa-receipt"></i> Tóm tắt đơn hàng
+                                </h5>
+                            </div>
+                            
+                            <div class="card-body">
+                                <!-- Danh sách sản phẩm -->
+                                <div class="order-items mb-3 pb-3 border-bottom">
+                                    <!-- order-items: Container chứa danh sách sản phẩm -->
+                                    
+                                    <!-- Item 1 -->
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <small>
+                                            <strong>Bút bi xanh</strong> x3
+                                        </small>
+                                        <small><strong>36,000đ</strong></small>
+                                    </div>
+                                    
+                                    <!-- Item 2 -->
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <small>
+                                            <strong>Giấy A4</strong> x1
+                                        </small>
+                                        <small><strong>55,250đ</strong></small>
+                                    </div>
+                                    
+                                    <!-- Item 3 -->
+                                    <div class="d-flex justify-content-between">
+                                        <small>
+                                            <strong>Marker highlight</strong> x2
+                                        </small>
+                                        <small><strong>144,000đ</strong></small>
+                                    </div>
+                                </div>
+
+                                <!-- Tạm tính -->
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Tạm tính:</span>
+                                    <strong>235,250đ</strong>
+                                </div>
+
+                                <!-- Phí vận chuyển -->
+                                <div class="d-flex justify-content-between mb-3 pb-3 border-bottom">
+                                    <span>Phí vận chuyển:</span>
+                                    <strong class="shipping-fee">Miễn phí</strong>
+                                </div>
+
+                                <!-- Tổng cộng -->
+                                <div class="d-flex justify-content-between mb-4">
+                                    <h6 class="mb-0">Tổng cộng:</h6>
+                                    <h5 class="mb-0 text-danger">
+                                        <strong>223,488đ</strong>
+                                    </h5>
+                                </div>
+
+                                <!-- Nút thanh toán -->
+                                <button type="submit" class="btn btn-danger btn-lg w-100" id="checkoutBtn">
+                                    <i class="fas fa-check-circle"></i> Hoàn tất thanh toán
+                                </button>
+
+                                <!-- Link quay lại -->
+                                <a href="gioHang.html" class="btn btn-outline-secondary btn-sm w-100 mt-3">
+                                    <i class="fas fa-arrow-left"></i> Quay lại giỏ hàng
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+
+    <!-- ==================== SCRIPT ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</body>
+</html>
