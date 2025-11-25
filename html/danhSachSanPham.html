@@ -4,20 +4,28 @@
 -->
 
 <!DOCTYPE html>
+<!-- DOCTYPE khai báo đây là HTML5 -->
 <html lang="vi">
+<!-- html lang="vi": Khai báo ngôn ngữ trang là tiếng Việt -->
 <head>
     <meta charset="UTF-8">
+    <!-- charset=UTF-8: Mã hóa ký tự Unicode, hiển thị tiếng Việt đúng -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport: Thiết lập responsive cho thiết bị di động -->
     <title>Danh sách sản phẩm - Thiên Lý</title>
+    <!-- title: Tên trang hiển thị trên tab trình duyệt -->
     
     <!-- Import Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- link Bootstrap: Thêm CSS có sẵn để dùng grid và component -->
     
     <!-- Import Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- link Font Awesome: Dùng để hiển thị icon như <i class="fas fa-filter"></i> -->
     
     <!-- Import file CSS tùy chỉnh -->
     <link rel="stylesheet" href="../css/danhSachSanPham.css">
+    <!-- file CSS riêng: chứa style cho trang danh sách sản phẩm -->
 </head>
 
 <body>
@@ -58,6 +66,7 @@
                                 <!-- Checkbox 1 -->
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="but-viet" id="cat1">
+                                    <!-- input checkbox: Người dùng tick để lọc theo danh mục Bút viết -->
                                     <label class="form-check-label" for="cat1">
                                         Bút viết <span class="text-muted">(120)</span>
                                     </label>
@@ -107,6 +116,7 @@
                                 <!-- Radio 1 -->
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="priceRange" value="all" id="price1" checked>
+                                    <!-- radio: Chọn một trong các khoảng giá, giá trị "all" = tất cả -->
                                     <label class="form-check-label" for="price1">
                                         Tất cả
                                     </label>
@@ -164,6 +174,7 @@
                                 <!-- Checkbox 1 -->
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="thien-long" id="brand1">
+                                    <!-- checkbox thương hiệu: Người dùng có thể chọn nhiều thương hiệu -->
                                     <label class="form-check-label" for="brand1">
                                         Thiên Long <span class="text-muted">(280)</span>
                                     </label>
@@ -213,6 +224,7 @@
                                 <!-- Radio 1 -->
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="rating" value="all" id="rating1" checked>
+                                    <!-- rating radio: Lọc theo số sao tối thiểu -->
                                     <label class="form-check-label" for="rating1">
                                         Tất cả
                                     </label>
@@ -269,13 +281,14 @@
                 <div class="col-lg-9">
                     <!-- ===== THANH TÌM KIẾM VÀ SẮP XẾP ===== -->
                     <div class="toolbar mb-4">
-                        <!-- toolbar: Thanh công cụ -->
+                        <!-- toolbar: Thanh công cụ chứa tìm kiếm & sắp xếp -->
                         
                         <div class="row g-3 align-items-center">
                             <!-- Search bar -->
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm..." id="searchInput">
+                                    <!-- input text: Nơi nhập từ khóa tìm kiếm -->
                                     <button class="btn btn-primary" type="button" id="searchBtn">
                                         <i class="fas fa-search"></i>
                                     </button>
@@ -297,6 +310,7 @@
                                         <option value="newest">Mới nhất</option>
                                         <option value="bestseller">Bán chạy nhất</option>
                                     </select>
+                                    <!-- select: Người dùng chọn tiêu chí sắp xếp danh sách -->
                                 </div>
                             </div>
                         </div>
