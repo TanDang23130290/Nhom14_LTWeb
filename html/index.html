@@ -31,8 +31,60 @@
     <!-- Import file CSS tùy chỉnh của website -->
     <link rel="stylesheet" href="../css/index.css">
 </head>
+<header>
+    <!-- ==================== HEADER / NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <!-- navbar: Thanh điều hướng chính của website -->
+        <!-- navbar-expand-lg: Menu sẽ hiển thị dạng ngang trên màn hình lớn, thu gọn thành hamburger menu trên màn hình nhỏ -->
+        
+        <div class="container-fluid">
+            <!-- container-fluid: Container chiếm 100% chiều rộng -->
+            
+            <!-- Logo và tên website -->
+            <a class="navbar-brand fw-bold" href="index.html">
+                <!-- fw-bold: Font-weight bold (chữ đậm) -->
+                <i class="fas fa-store" style="color: #003da5;"></i> Thiên Lý
+            </a>
+            
+            <!-- Nút toggle cho menu trên di động -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <!-- data-bs-toggle: Bootstrap attribute để toggle menu -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu điều hướng -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- ms-auto: Margin-start auto (đẩy menu sang phải) -->
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="danhSachSanPham.html">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lien_he.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioHang.html">
+                            <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="Dangnhap.html">
+                            <i class="fas fa-user"></i> Đăng nhập
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
 
 <body>
+
 
     <!-- ==================== PHẦN DANH MỤC SẢN PHẨM ==================== -->
     <section class="categories-section py-5">
@@ -137,7 +189,7 @@
                         <!-- Hình ảnh sản phẩm -->
                         <div class="product-image">
                             <!-- product-image: Container chứa ảnh sản phẩm -->
-                            <img src="https://cdn.hstatic.net/products/1000230347/artboard_9_copy_87a8de69186a47b3bb2b65f06c02d7f8.jpg" alt="Bút bi Thiên Long ECO Style TL-063/ECO - Mực Xanh - Chất liệu từ vỏ cám trấu">
+                            <img src="https://cdn.hstatic.net/products/1000230347/artboard_9_copy_87a8de69186a47b3bb2b65f06c02d7f8.jpg" alt="Bút bi Thiên Long ECO Style TL-063/ECO ">
                             <!-- alt: Mô tả ảnh để SEO và accessibility -->
                         </div>
                         
@@ -145,7 +197,7 @@
                         <div class="product-info p-3">
                             <!-- p-3: Padding 3 unit (12px) cho tất cả các cạnh -->
 
-                            <h6>Bút bi Thiên Long ECO Style TL-063/ECO - Mực Xanh - Chất liệu từ vỏ cám trấu</h6>
+                            <h6>Bút bi Thiên Long ECO Style TL-063/ECO </h6>
                             <!-- h6: Tiêu đề cấp 6 nhỏ nhất -->
                             
                             <!-- Sao đánh giá -->
@@ -213,10 +265,10 @@
                     <div class="product-card">
                         <div class="product-badge">-35%</div>
                         <div class="product-image">
-                            <img src="https://cdn.hstatic.net/products/1000230347/artboard_11_copy_2_e2099ccf024d4fa4bbde7f5616d2eb7d.jpg" alt="Máy tính khoa học Thiên Long Flexio Fx799VN, 4 màu pastel mới, bảo hành 7 năm, 1 đổi 1 trong 1 năm đầu">
+                            <img src="https://cdn.hstatic.net/products/1000230347/artboard_11_copy_2_e2099ccf024d4fa4bbde7f5616d2eb7d.jpg" alt="Máy tính khoa học Thiên Long Flexio Fx799VN">
                         </div>
                         <div class="product-info p-3">
-                            <h6>Máy tính khoa học Thiên Long Flexio Fx799VN, 4 màu pastel mới, bảo hành 7 năm, 1 đổi 1 trong 1 năm đầu</h6>
+                            <h6>Máy tính khoa học Thiên Long Flexio Fx799VN</h6>
                             <div class="stars mb-2">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
