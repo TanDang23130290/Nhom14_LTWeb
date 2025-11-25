@@ -315,12 +315,6 @@ body {
   transition: all 0.3s ease;
 }
 
-.pagination .page-link:hover {
-  /* Khi hover vào link */
-  background-color: #003da5;
-  color: white;
-  border-color: #003da5;
-}
 
 .pagination .page-item.active .page-link {
   /* Trang hiện tại */
