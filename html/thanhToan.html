@@ -4,20 +4,28 @@
 -->
 
 <!DOCTYPE html>
+<!-- DOCTYPE khai báo đây là HTML5 -->
 <html lang="vi">
+<!-- html lang="vi": Khai báo ngôn ngữ trang là tiếng Việt -->
 <head>
     <meta charset="UTF-8">
+    <!-- charset=UTF-8: Mã hóa ký tự Unicode, hiển thị tiếng Việt đúng -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport: Thiết lập responsive cho thiết bị di động -->
     <title>Thanh toán - Thiên Lý</title>
+    <!-- title: Tên trang hiển thị trên tab trình duyệt -->
     
     <!-- Import Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap: Dùng layout và component có sẵn -->
     
     <!-- Import Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome: Dùng icon cho button và header -->
     
     <!-- Import file CSS -->
     <link rel="stylesheet" href="../css/thanhToan.css">
+    <!-- CSS riêng: Style cho trang thanh toán -->
 </head>
 
 <body>
@@ -37,28 +45,28 @@
                         <!-- card: Bootstrap component cho thẻ -->
                         
                         <div class="card-header bg-primary text-white">
-                            <!-- card-header: Phần đầu của thẻ -->
+                            <!-- card-header: Phần đầu của thẻ, bg-primary: nền xanh -->
                             <h5 class="mb-0">
                                 <i class="fas fa-map-marker-alt"></i> Thông tin giao hàng
                             </h5>
                         </div>
                         
                         <div class="card-body">
-                            <!-- card-body: Phần nội dung của thẻ -->
+                            <!-- card-body: Phần nội dung của thẻ chứa form -->
                             
                             <form id="shippingForm">
-                                <!-- form: Biểu mẫu -->
+                                <!-- form: Biểu mẫu nhập thông tin giao hàng -->
                                 
                                 <!-- Hàng 1: Họ tên -->
                                 <div class="row mb-3">
                                     <div class="col-md-6">
                                         <label for="fullName" class="form-label">
                                             Họ và tên <span class="text-danger">*</span>
-                                            <!-- <span class="text-danger">*</span>: Đánh dấu trường bắt buộc -->
+                                            <!-- *: Trường bắt buộc -->
                                         </label>
                                         <input type="text" class="form-control" id="fullName" 
                                                placeholder="Nhập họ và tên" required>
-                                        <!-- required: Trường bắt buộc -->
+                                        <!-- required: Không cho submit nếu bỏ trống -->
                                     </div>
                                     
                                     <!-- Số điện thoại -->
@@ -68,6 +76,7 @@
                                         </label>
                                         <input type="tel" class="form-control" id="phone" 
                                                placeholder="Nhập số điện thoại" required>
+                                        <!-- type="tel": Trình duyệt hiển thị bàn phím số trên mobile -->
                                     </div>
                                 </div>
 
@@ -78,6 +87,7 @@
                                     </label>
                                     <input type="email" class="form-control" id="email" 
                                            placeholder="Nhập email" required>
+                                    <!-- type="email" giúp validate định dạng email cơ bản -->
                                 </div>
 
                                 <!-- Hàng 3: Địa chỉ -->
@@ -96,7 +106,7 @@
                                             Tỉnh/Thành phố <span class="text-danger">*</span>
                                         </label>
                                         <select class="form-select" id="city" required>
-                                            <!-- form-select: Bootstrap component cho select -->
+                                            <!-- form-select: Dropdown chọn tỉnh/thành -->
                                             
                                             <option value="">Chọn tỉnh/thành phố</option>
                                             <option value="hcm">TP. Hồ Chí Minh</option>
@@ -117,6 +127,7 @@
                                             <option value="2">Quận 2</option>
                                             <option value="3">Quận 3</option>
                                         </select>
+                                        <!-- district select: Thường phụ thuộc vào value của city (cần JS để cập nhật) -->
                                     </div>
                                 </div>
 
@@ -125,6 +136,7 @@
                                     <label for="notes" class="form-label">Ghi chú đơn hàng (tùy chọn)</label>
                                     <textarea class="form-control" id="notes" rows="3" 
                                               placeholder="Nhập ghi chú cho người bán..."></textarea>
+                                    <!-- textarea: Dùng khi người dùng cần thêm yêu cầu đặc biệt -->
                                 </div>
                             </form>
                         </div>
@@ -138,14 +150,14 @@
                             </h5>
                         </div>
                         
-                        <div class="card-body">
+                            <div class="card-body">
                             <!-- Radio button 1 -->
                             <div class="form-check mb-3 p-3 border rounded">
                                 <!-- form-check: Bootstrap component cho radio button -->
                                 
                                 <input class="form-check-input" type="radio" name="shippingMethod" 
                                        id="fast" value="fast" checked>
-                                <!-- checked: Được chọn mặc định -->
+                                <!-- checked: Được chọn mặc định, value cho biết phương thức giao hàng -->
                                 
                                 <label class="form-check-label" for="fast">
                                     <strong>Giao hàng nhanh (2-3 ngày)</strong> - Miễn phí
