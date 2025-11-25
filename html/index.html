@@ -32,31 +32,33 @@
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <header>
-    <!-- ==================== HEADER / NAVBAR ==================== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <!-- navbar: Thanh điều hướng chính của website -->
+
         <!-- navbar-expand-lg: Menu sẽ hiển thị dạng ngang trên màn hình lớn, thu gọn thành hamburger menu trên màn hình nhỏ -->
-        
         <div class="container-fluid">
-            <!-- container-fluid: Container chiếm 100% chiều rộng -->
-            
-            <!-- Logo và tên website -->
+             <!-- container-fluid: Container chiếm 100% chiều rộng -->
             <a class="navbar-brand fw-bold" href="index.html">
                 <!-- fw-bold: Font-weight bold (chữ đậm) -->
                 <i class="fas fa-store" style="color: #003da5;"></i> Thiên Lý
             </a>
             
-            <!-- Nút toggle cho menu trên di động -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <!-- data-bs-toggle: Bootstrap attribute để toggle menu -->
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <!-- Menu điều hướng -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <!-- ms-auto: Margin-start auto (đẩy menu sang phải) -->
-                    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                
+                <form class="d-flex align-items-center me-3 my-2 my-lg-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm..." id="searchInput" style="width: 600px;">
+                        <button class="btn btn-primary" type="button" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Trang chủ</a>
                     </li>
@@ -71,7 +73,7 @@
                             <i class="fas fa-shopping-cart"></i> Giỏ hàng
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a class="nav-link" href="Dangnhap.html">
                             <i class="fas fa-user"></i> Đăng nhập
                         </a>
