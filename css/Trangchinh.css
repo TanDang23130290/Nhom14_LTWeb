@@ -31,13 +31,7 @@ body{
 .custom-icon-lg{
     font-size:35px;
 }
-.shopping_icon{
-    position: relative;
-    left:440px;
-    bottom:100px;
-    font-size: 25px;
-    cursor: pointer;
-}
+
 .menu_icon{
     position: relative;
     font-size:25px;
