@@ -1,0 +1,208 @@
+
+
+/* ===== CART ITEMS ===== */
+.cart-items {
+  /* cart-items: Container chứa danh sách sản phẩm trong giỏ */
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item {
+  /* cart-item: Một sản phẩm trong giỏ hàng */
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item:hover {
+  /* Khi hover vào sản phẩm */
+  background-color: #f8f9fa;
+}
+
+.cart-item:last-child {
+  /* Sản phẩm cuối cùng */
+  border-bottom: none;
+}
+
+.quantity-control {
+  /* quantity-control: Container điều khiển số lượng */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quantity-control .qty-input {
+  /* Input số lượng */
+  width: 50px;
+  text-align: center;
+}
+
+/* ===== ORDER SUMMARY ===== */
+.order-summary {
+  /* order-summary: Phần tóm tắt đơn hàng */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.summary-row {
+  /* summary-row: Một hàng trong tóm tắt */
+  padding: 15px 0;
+}
+
+.summary-row .d-flex {
+  /* Căn giữa hai đầu */
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== COUPON SECTION ===== */
+.coupon-section {
+  /* coupon-section: Phần nhập mã giảm giá */
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.coupon-section h6 {
+  /* Tiêu đề mã giảm giá */
+  color: #003da5;
+  font-weight: bold;
+}
+
+.coupon-section .input-group {
+  /* Input group cho mã giảm giá */
+  display: flex;
+  gap: 0;
+}
+
+/* ===== PRODUCT CARD LIST ===== */
+.product-card-list {
+  /* product-card-list: Thẻ sản phẩm */
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.product-card-list:hover {
+  /* Khi hover vào thẻ sản phẩm */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-badge-list {
+  /* product-badge-list: Nhãn giảm giá */
+  position: absolute; /* Vị trí tuyệt đối */
+  top: 10px; /* Cách từ phía trên 10px */
+  right: 10px; /* Cách từ phía phải 10px */
+  background-color: #e74c3c; /* Màu đỏ */
+  color: white; /* Chữ trắng */
+  padding: 5px 10px; /* Padding 5px trên dưới, 10px trái phải */
+  border-radius: 4px; /* Bo tròn góc 4px */
+  font-size: 12px; /* Kích thước chữ 12px */
+  font-weight: bold;
+  z-index: 10; /* Đảm bảo nhãn nằm trên các phần tử khác */
+}
+
+.product-image-list {
+  /* product-image-list: Container chứa ảnh sản phẩm */
+  width: 100%;
+  height: 150px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-image-list img {
+  /* Ảnh trong product-image-list */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info-list {
+  /* product-info-list: Thông tin sản phẩm */
+  padding: 12px;
+}
+
+.product-info-list h6 {
+  /* Tên sản phẩm */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.price {
+  /* price: Phần giá tiền */
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.old-price {
+  /* old-price: Giá gốc */
+  color: #999;
+  font-size: 12px;
+}
+
+.new-price {
+  /* new-price: Giá mới */
+  color: #e74c3c;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  /* @media: Media query - Áp dụng style cho màn hình <= 768px */
+
+  .table {
+    /* Bảng nhỏ hơn */
+    font-size: 12px;
+  }
+
+  .quantity-control {
+    /* Điều khiển số lượng nhỏ hơn */
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .quantity-control .qty-input {
+    /* Input số lượng nhỏ hơn */
+    width: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* @media: Media query - Áp dụng style cho màn hình <= 576px */
+
+  .table {
+    /* Bảng nhỏ hơn */
+    font-size: 11px;
+  }
+
+  th,
+  td {
+    /* Cell nhỏ hơn */
+    padding: 8px 4px !important;
+  }
+
+  .d-flex {
+    /* Flex nhỏ hơn */
+    gap: 10px;
+  }
+
+  img {
+    /* Ảnh nhỏ hơn */
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
