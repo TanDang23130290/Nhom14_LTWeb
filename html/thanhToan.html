@@ -1,35 +1,71 @@
-<!-- 
-    WEBSITE BÁN VĂN PHÒNG PHẨM - TRANG THANH TOÁN
-    Trang này cho phép người dùng nhập thông tin và tiến hành thanh toán
--->
-
 <!DOCTYPE html>
-<!-- DOCTYPE khai báo đây là HTML5 -->
 <html lang="vi">
-<!-- html lang="vi": Khai báo ngôn ngữ trang là tiếng Việt -->
 <head>
     <meta charset="UTF-8">
-    <!-- charset=UTF-8: Mã hóa ký tự Unicode, hiển thị tiếng Việt đúng -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- viewport: Thiết lập responsive cho thiết bị di động -->
     <title>Thanh toán - Thiên Lý</title>
-    <!-- title: Tên trang hiển thị trên tab trình duyệt -->
-    
+
     <!-- Import Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap: Dùng layout và component có sẵn -->
-    
     <!-- Import Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Font Awesome: Dùng icon cho button và header -->
-    
-    <!-- Import file CSS -->
-    <link rel="stylesheet" href="../css/thanhToan.css">
-    <!-- CSS riêng: Style cho trang thanh toán -->
+        <link rel="stylesheet" href="../css/thanhToan.css">
 </head>
 
 <body>
+<!-- ==================== PHẦN HEADER ==================== -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <!-- navbar: Thanh điều hướng chính của website -->
 
+        <!-- navbar-expand-lg: Menu sẽ hiển thị dạng ngang trên màn hình lớn, thu gọn thành hamburger menu trên màn hình nhỏ -->
+        <div class="container-fluid">
+             <!-- container-fluid: Container chiếm 100% chiều rộng -->
+            <a class="navbar-brand fw-bold" href="index.html">
+                <!-- fw-bold: Font-weight bold (chữ đậm) -->
+                <img class="Trademark_logo" src="remove-photos-background-removed (2).png" height="70" width="80" alt="Thiên Lý Logo" />
+                <span class="brand-name-simple">Thiên Lý</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                
+                <form class="d-flex align-items-center me-3 my-2 my-lg-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm..." id="searchInput" style="width: 600px;">
+                        <button class="btn btn-primary" type="button" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="danhSachSanPham.html">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lien_he.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioHang.html">
+                            <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dangnhap.html">
+                            <i class="fas fa-user"></i> Đăng nhập
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
     <!-- ==================== PHẦN CHÍNH: THANH TOÁN ==================== -->
     <main class="py-5">
         <div class="container">
