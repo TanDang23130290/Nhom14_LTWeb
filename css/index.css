@@ -249,3 +249,7 @@ body {
     font-size: 20px; /* Kích thước chữ 20px */
   }
 }
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
