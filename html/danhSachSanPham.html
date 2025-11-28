@@ -28,8 +28,62 @@
     <!-- file CSS riêng: chứa style cho trang danh sách sản phẩm -->
 </head>
 
-<body>
 
+<body>
+<!-- ==================== PHẦN HEADER ==================== -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <!-- navbar: Thanh điều hướng chính của website -->
+
+        <!-- navbar-expand-lg: Menu sẽ hiển thị dạng ngang trên màn hình lớn, thu gọn thành hamburger menu trên màn hình nhỏ -->
+        <div class="container-fluid">
+             <!-- container-fluid: Container chiếm 100% chiều rộng -->
+            <a class="navbar-brand fw-bold" href="index.html">
+                <!-- fw-bold: Font-weight bold (chữ đậm) -->
+                <img class="Trademark_logo" src="remove-photos-background-removed (2).png" height="70" width="80" alt="Thiên Lý Logo" />
+                <span class="brand-name-simple">Thiên Lý</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                
+                <form class="d-flex align-items-center me-3 my-2 my-lg-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm..." id="searchInput" style="width: 600px;">
+                        <button class="btn btn-primary" type="button" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="danhSachSanPham.html">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lien_he.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioHang.html">
+                            <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dangnhap.html">
+                            <i class="fas fa-user"></i> Đăng nhập
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
     <!-- ==================== PHẦN CHÍNH ==================== -->
     <main class="py-5">
         <div class="container">
@@ -279,24 +333,15 @@
 
                 <!-- ===== CỘT BÊN PHẢI: DANH SÁCH SẢN PHẨM ===== -->
                 <div class="col-lg-9">
-                    <!-- ===== THANH TÌM KIẾM VÀ SẮP XẾP ===== -->
+                    <!-- ===== THANH SẮP XẾP ===== -->
                     <div class="toolbar mb-4">
-                        <!-- toolbar: Thanh công cụ chứa tìm kiếm & sắp xếp -->
+                        <!-- toolbar: Thanh công cụ chứa sắp xếp -->
                         
                         <div class="row g-3 align-items-center">
-                            <!-- Search bar -->
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm..." id="searchInput">
-                                    <!-- input text: Nơi nhập từ khóa tìm kiếm -->
-                                    <button class="btn btn-primary" type="button" id="searchBtn">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </div>
-                            </div>
+                            
                             
                             <!-- Sort dropdown -->
-                            <div class="col-md-6">
+                            <div class="col-12">
                                 <div class="d-flex align-items-center justify-content-end gap-2">
                                     <label for="sortSelect" class="mb-0">
                                         <i class="fas fa-sort"></i> Sắp xếp:

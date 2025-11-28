@@ -13,6 +13,22 @@ body {
   color: #333; /* Màu chữ mặc định (xám tối) */
   background-color: #f8f9fa; /* Màu nền (xám nhạt) */
 }
+/* Trang trí cho logo và chữ Thiên Lý */
+.Trademark_logo {
+    vertical-align: middle; /* Căn giữa ảnh so với dòng văn bản */
+    margin-right: 10px;     /* Tạo khoảng cách bên phải ảnh */
+}
+
+.brand-name-simple {
+    vertical-align: middle; /* Căn giữa chữ */
+    margin-right: 15px;     /* Tạo khoảng cách bên phải chữ */
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
 
 /* ===== PHẦN DANH MỤC SẢN PHẨM ===== */
 .categories-section {
