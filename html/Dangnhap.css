@@ -1,0 +1,66 @@
+body{
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.container{
+    background: #ffffff;
+    box-shadow:
+            0 10px 25px rgba(0, 0, 0, 0.1),
+            0 20px 48px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e5e9;
+    height:484px;
+    width:430px;
+    margin-top:300px;
+    margin-bottom:140px;
+    border-radius: 15px;
+}
+.row-1{
+    width:100%;
+    height:50px;
+    position:relative;
+     top:45px;
+    text-align:center;
+    font-size:30px;
+    color:black;
+}
+.row-2{
+    width:100%;
+    height:50px;
+    position:relative;
+    top:65px;
+    color:black;
+}
+.row-3{
+    width:100%;
+    height:50px;
+    position:relative;
+    top:145px;
+}
+.row-4{
+    width:100%;
+    height:50px;
+    position:relative;
+    top:165px;
+    text-align: center;
+}
+.Login_button{
+    background-color:#3c69e6;
+    border-radius:15px;
+    border:none;
+    width:80%;
+    color:#ffffff;
+    font-size: 20px;
+}
+.row-5 {
+    width:100%;
+    height:50px;
+    position:relative;
+    top:185px;
+    text-align:center;
+}
+.forgot-password{
+    color:gray;
+}
+
+.create_account{
+   color:gray;
+}
