@@ -1,0 +1,129 @@
+.main {
+    background-color: white;
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: 'Inter', sans-serif;
+
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.footer{
+    display: block;
+    unicode-bidi: isolate;  // giúp đoạn đó không bị ảnh hưởng bởi hướng của nội dung xung quanh.
+
+}
+.mid-footer{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background: blue;
+    font-size: 14px;
+    padding-top: 50px;
+
+}
+.container{
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    justify-content: space-between;
+    gap:20px;
+}
+.auto{
+    position:relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.mt-4{
+
+    margin-top: 1.5rem !important;
+     width: 280px;
+    position: relative;
+
+}
+.about-company{
+
+    line-height: 24px;
+    margin-top: 18px;
+    font-size: 16px;
+}
+.mid-footer .line_patker{
+    margin-top: 1rem;
+}
+
+.mid-footer .line_patker img{
+    width: 150px;
+}
+.mid-footer .title-menu {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    display: flex;
+   color: #fbe263;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.mid-footer .footer-click:nth-child(2) .title {
+    color: #fbe263;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+}
+.mid-footer p {
+    margin-bottom: 5px;
+    color: #f8f9fa;
+}
+.mid-footer p b{
+    color: #fbe263fa;
+}
+.mid-footer .f-block.f-support > p{
+    color: #fbe263;
+    line-height: 1;
+    font-size: 16px;
+    font-family: 'brandon', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.mid-footer .list-menu{
+    list-style: none;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+}
+.mid-footer .list-menu .link{
+    font-size: 15px;
+    color: #eaeef4;
+}
+.mid-footer .li_menu{
+    list-style: "-";
+    padding-bottom: 6px;
+    list-style-position: inside;
+    color: #eaeef4;
+}
+.logo-footer{
+    width: 200px ;
+    height: 100px;
+}
+.col-sm-4{
+    position: relative;
+    bottom: 50px;
+}
