@@ -545,3 +545,7 @@ body {
     padding-top: 50px;
 
 }
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
