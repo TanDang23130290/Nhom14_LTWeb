@@ -1,0 +1,171 @@
+/* --- Cài Đặt Chung --- */
+:root {
+    --primary-color: #007bff; /* Màu xanh dương chính */
+    --secondary-color: #6c757d; /* Màu xám phụ */
+    --sidebar-bg: #2c3e50; /* Màu nền sidebar: xanh đậm */
+    --sidebar-text: #ecf0f1; /* Màu chữ sidebar: trắng nhạt */
+    --card-bg: #ffffff; /* Màu nền card: trắng */
+    --body-bg: #f4f7f6; /* Màu nền tổng thể */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--body-bg);
+    line-height: 1.6;
+}
+
+/* --- Container Chính --- */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- Thanh Bên (Sidebar) --- */
+.sidebar {
+    width: 250px;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding: 20px 0;
+    flex-shrink: 0; /* Đảm bảo sidebar không co lại */
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 10px 20px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav li a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--sidebar-text);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.sidebar-nav li a i {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+/* --- Nội Dung Chính --- */
+.main-content {
+    flex-grow: 1; /* Cho phép nội dung chính chiếm phần còn lại */
+    padding: 20px;
+}
+
+/* --- Thanh Header Chính --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.user-info i {
+    margin-left: 15px;
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.user-info span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* --- Thẻ Thống Kê (Stat Cards) --- */
+.stat-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-right: 15px;
+    padding: 10px;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 6px;
+}
+
+.card-label {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.card-value {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* --- Khu Vực Biểu Đồ/Bảng --- */
+.charts-section h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.placeholder {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    color: #666;
+}

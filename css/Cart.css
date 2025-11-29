@@ -291,6 +291,7 @@
     padding-bottom: 6px;
     list-style-position: inside;
     color: #eaeef4;
+    cursor:pointer;
 }
 .logo-footer{
     width: 200px ;
