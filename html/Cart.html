@@ -11,7 +11,57 @@
     
     <link rel="stylesheet" href="../css/Cart.css">
 </head>
+<!-- ==================== PHẦN HEADER ==================== -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <!-- navbar: Thanh điều hướng chính của website -->
 
+        <!-- navbar-expand-lg: Menu sẽ hiển thị dạng ngang trên màn hình lớn, thu gọn thành hamburger menu trên màn hình nhỏ -->
+        <div class="container-fluid">
+            <!-- container-fluid: Container chiếm 100% chiều rộng -->
+            <a class="navbar-brand fw-bold" href="Mainpage.html">
+                <!-- fw-bold: Font-weight bold (chữ đậm) -->
+                <img class="Trademark_logo" src="remove-photos-background-removed (2).png" height="70" width="80" alt="Thiên Lý Logo" />
+                <span class="brand-name-simple">Thiên Lý</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <!-- thanh tim kiem -->
+                <form class="d-flex align-items-center me-3 my-2 my-lg-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm..." id="searchInput" style="width: 600px;">
+                        <button class="btn btn-primary" type="button" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Mainpage.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Listproducts.html">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cart.html">
+                            <i class="fas fa-shopping-cart"></i> Giỏ hàng
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">
+                            <i class="fas fa-user"></i> Đăng nhập
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 <body>
 
     <!-- ==================== PHẦN CHÍNH: GIỎ HÀNG ==================== -->
